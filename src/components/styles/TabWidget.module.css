@@ -1,0 +1,58 @@
+.tabWidget {
+    background: #2C2C2E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease; /* Added for hover interaction */
+  }
+  
+  .tabWidget:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow change on hover */
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tabs button {
+    background: #3A3A3C;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .tabs button:hover {
+    background: #4A4A4C; /* Slightly lighter color on hover */
+  }
+  
+  .activeTab {
+    background: #5856D6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add a slight shadow to active tab */
+  }
+  
+  .content {
+    margin-top: 20px;
+    line-height: 1.5; /* Adjusted line height for readability */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .tabWidget {
+      padding: 15px;
+    }
+    
+    .tabs button {
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tabWidget {
+      padding: 10px;
+    }
+  }
+  

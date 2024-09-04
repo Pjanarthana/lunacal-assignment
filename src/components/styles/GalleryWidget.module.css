@@ -1,0 +1,92 @@
+.galleryWidget {
+    background: #2C2C2E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease; /* Added for hover interaction */
+  }
+  
+  .galleryWidget:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow change on hover */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addButton {
+    background: grey;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+  .addgallery{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background: grey; /* Slightly lighter color on hover */
+  }
+  
+  .navButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .prevButton, .nextButton {
+    background: #3A3A3C;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .prevButton:hover, .nextButton:hover {
+    background: #4A4A4C; /* Slightly lighter color on hover */
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling for more images */
+  }
+  
+  .gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .galleryWidget {
+      padding: 15px;
+    }
+  
+    .gallery img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .galleryWidget {
+      padding: 10px;
+    }
+  }
+  

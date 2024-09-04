@@ -1,0 +1,33 @@
+.mainContainer {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rightSide {
+  margin-left: auto;
+  width: 45%; /* Adjusted to maintain alignment */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px; /* Constrain width for better responsiveness */
+}
+
+/* Responsive design for laptop screens (above 768px) */
+@media (max-width: 1200px) {
+  .mainContainer {
+    padding: 15px;
+  }
+
+  .rightSide {
+    width: 50%;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightSide {
+    width: 100%;
+  }
+}
